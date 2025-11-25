@@ -1,12 +1,10 @@
-/* GLOBALS */
-/* Faculty Glyphic — headings */
+/* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400;600&display=swap');
-
-/* Hanken Grotesk — body text */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500&display=swap');
-
-/* Lexend Exa — button */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@500;600&display=swap');
+
+/* Tailwind CSS v4 */
+@import "tailwindcss";
 
 
 body {
@@ -15,45 +13,14 @@ body {
 }
 
 section {
-  height: 100vh;          /* full viewport height */
-  width: 100vw;           /* optional */
-  padding: 0 20px;        /* remove vertical padding */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertically center content */
-  align-items: center;     /* horizontally center content */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-/* LIGHT SECTION COLOR RULES */
-.light h1,
-.light h2 {
-  color: #463D2F;   /* dark brown headings */
-}
-
-.light p {
-  color: #847E72;   /* soft grey-brown body text */
-}
-
-
-h1, h2 {
-  margin: 0 0 16px 0;
-  font-weight: 100;
-  color: #F2F1E4;
-  font-family: 'Faculty Glyphic', serif;
-}
-
-p {
-  max-width: 500px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-p, li, span, body, section {
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 24px;
-  color: #b9b09e;
-}
 
 /* COLORS */
 .light {
@@ -65,87 +32,23 @@ p, li, span, body, section {
   background: #463D2F;
   color: #ece7df;
 }
-.cta {
-  margin-top: 22px;
-  padding: 12px 22px;
-  font-size: 16px;
-  font-family: 'Lexend Exa', sans-serif;
-  background: #3f342f;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+
+
+.lexend-exa {
+  font-family: "Lexend Exa", sans-serif;
 }
 
-/* CONTENT BLOCKS */
-.section .content {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* AVATAR */
-.avatar-block {
-  position: relative;
+
+.hanken-grotesk-400 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.avatar {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  position: absolute;
-  right: -40px;
-  top: 20px;
-  border: 3px solid #ece7df;
-}
-/* TWO COLUMN LAYOUT */
-.two-col {
-  display: flex;
-  width: 100%;
-  max-width: 1100px;
-  gap: 60px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 40px;
-}
-
-.col-left, .col-right {
-  flex: 1;
-}
-
-.col-left {
-  text-align: left;
-  max-width: 540px;
-}
-
-.col-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* OPTIONAL: large image in right column */
-.col-right img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-/* MOBILE RESPONSIVE — stack columns */
-@media (max-width: 800px) {
-  .two-col {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    
-  }
-
-  .col-left {
-    text-align: center;
-  }
-}
-
-/* FOOTER */
-.footer h2 {
-  margin-bottom: 12px;
-}
