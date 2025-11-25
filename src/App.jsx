@@ -8,37 +8,36 @@ export default function App() {
       {/* HERO SECTION */}
       <section className="light relative">
         <div className="relative">
-          <p className="text-5xl faculty-glyphic-regular">Inbox of the City</p>
-          <img src="/underline.png" className="absolute -bottom-5 right-0 w-28"/>
+          <p className="text-4xl md:text-5xl faculty-glyphic-regular">Inbox of the City</p>
+          <img src="/underline.png" className="absolute -bottom-3 md:-bottom-5 right-0 w-18 md:w-28"/>
         </div>
         
-        <p className="text-2xl mt-6 text-[#847E72] max-w-md hanken-grotesk-400">Keep up with what's hot in Philly with simple email alerts.</p>
+        <p className="text-xl md:text-2xl px-8 mt-6 text-[#847E72] max-w-md hanken-grotesk-400">Keep up with what's hot in Philly with simple email alerts.</p>
         <a href="https://ifttt.com/applets/mnYi4Tvk-keep-up-w-philly" target="_blank">
         <div 
-          className="lexend-exa text-lg mt-6 py-2 px-4 bg-[#3f342f] text-white rounded-md"
+          className="lexend-exa text-base md:text-lg mt-6 py-2 px-4 bg-[#3f342f] text-white rounded-md"
          >
           JOIN US
         </div>
         </a>
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl">
-          <img src="/together.png" />
-        </div>
+        <img src="/together.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl min-w-3xl"/>
+  
 
       </section>
 
       {/* SECTION 1 */}
       <section className="dark">
-        <div className="grid grid-cols-2 max-w-6xl mx-auto gap-20 px-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-20 items-center">
           <div className="text-left">
-            <p className="text-4xl faculty-glyphic-regular">Let Philly email you when something cool is happening.</p>
-            <p className="text-xl mt-6 text-[#B9AF9D] hanken-grotesk-400">
+            <p className="text-3xl md:text-4xl faculty-glyphic-regular">Let Philly email you when something cool is happening.</p>
+            <p className="text-lg md:text-xl mt-6 text-[#B9AF9D] hanken-grotesk-400">
               Inbox of the City turns hot posts from r/Philadelphia into simple email alerts, so you can follow marathons, Eagles games, and neighborhood happenings without doomscrolling your feed.
             </p>
           </div>
 
             {/* Right column optional image */}
-            <img src="/bird.png" className="max-h-70 mx-auto"/>
+            <img src="/bird.png" className="max-h-70 mx-auto hidden md:block"/>
 
         </div>
       </section>
@@ -46,18 +45,20 @@ export default function App() {
       {/* SECTION 2 */}
       <section className="light relative">
         <div className="max-w-lg">
-          <p className="text-4xl faculty-glyphic-regular">Have you ever felt like everyone else just “knows what's going on”?</p>
-          <p className="text-xl mt-6 text-[#847E72] hanken-grotesk-400">
+          <p className="text-3xl md:text-4xl faculty-glyphic-regular">Have you ever felt like everyone else just “knows what's going on”?</p>
+          <p className="text-lg md:text-xl mt-6 text-[#847E72] hanken-grotesk-400">
             Living in Philadelphia means there's always something happening. But staying in the loop is sometimes difficult.
           </p>
         </div>
-          <img src="/emojis.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl"/>
+
+        <img src="/emojis.png" className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl"/>
+
         
       </section>
 
       {/* SECTION 3 */}
       <section className="dark">
-        <div className="grid grid-cols-2 max-w-6xl mx-auto gap-10 px-10">
+        <div className="grid grid-cols-2 max-w-6xl mx-auto gap-10">
           <div className="text-left">
             <p className="text-4xl faculty-glyphic-regular">How it works</p>
             <p className="text-xl mt-6 text-[#B9AF9D] hanken-grotesk-400">
@@ -113,8 +114,8 @@ export default function App() {
       {/* FOOTER */}
       <section className="light relative overflow-x-hidden">
         <div className="max-w-lg">
-          <p className="text-4xl faculty-glyphic-regular">Let the city reach out to you</p>
-          <p className="text-xl mt-6 text-[#847E72] hanken-grotesk-400">
+          <p className="text-3xl md:text-4xl faculty-glyphic-regular">Let the city reach out to you</p>
+          <p className="text-lg md:text-xl mt-6 text-[#847E72] hanken-grotesk-400">
             Sign up for Inbox of the City today.
           </p>
         </div>

@@ -19,6 +19,8 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
+  padding: 0 2.5rem;
 }
 
 
