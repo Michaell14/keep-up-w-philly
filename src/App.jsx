@@ -28,7 +28,7 @@ export default function App() {
 
       {/* SECTION 1 */}
       <section className="dark">
-        <div className="grid grid-cols-2 max-w-6xl mx-auto gap-20 px-10">
+        <div className="grid grid-cols-2 max-w-6xl mx-auto gap-20 px-10 items-center">
           <div className="text-left">
             <p className="text-4xl faculty-glyphic-regular">Let Philly email you when something cool is happening.</p>
             <p className="text-xl mt-6 text-[#B9AF9D] hanken-grotesk-400">
@@ -36,10 +36,9 @@ export default function App() {
             </p>
           </div>
 
-          <div>
             {/* Right column optional image */}
-            <img src="/bird.png" className="max-h-70"/>
-          </div>
+            <img src="/bird.png" className="max-h-70 mx-auto"/>
+
         </div>
       </section>
 
@@ -120,7 +119,7 @@ export default function App() {
         </div>
         
         <img src="/city.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl"/>
-        <img src="/plane.png" className="absolute top-20 right-0 w-full max-w-5xl"/>
+        <img src="/plane.png" className="absolute top-20 right-0 w-full max-w-6xl"/>
       </section>
 
     </div>
