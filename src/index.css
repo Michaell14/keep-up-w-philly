@@ -23,10 +23,39 @@ section {
 
 
 /* COLORS */
+/* .light { */
+  /* background: #f3f0e6; */
+  /* color: #222;
+  --dot-bg: #161616;
+  --dot-color: #848282;
+  --dot-size: 1px;
+  --dot-space: 50px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color); */
+/* } */
+
 .light {
-  background: #f3f0e6;
   color: #222;
+  /* variables */
+  --dot-bg: #16161664;     /* dot color */
+  --dot-fill: #f3f0e69f;   /* overall background color */
+  --dot-size: .2px;       /* dot radius */
+  --dot-space: 45px;     /* spacing between dots */
+
+  /* base color */
+  background-color: var(--dot-fill);
+
+  /* two radial gradients produce a repeating dot grid with offset */
+  background-image:
+    radial-gradient(circle at 0 0, var(--dot-bg) var(--dot-size), transparent calc(var(--dot-size) + 1px)),
+    radial-gradient(circle at calc(var(--dot-space) / 2) calc(var(--dot-space) / 2),
+                    var(--dot-bg) var(--dot-size), transparent calc(var(--dot-size) + 1px));
+  background-size: var(--dot-space) var(--dot-space);
+  background-repeat: repeat;
 }
+
 
 .dark {
   background: #463D2F;

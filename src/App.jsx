@@ -24,6 +24,7 @@ export default function App() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl">
           <img src="/together.png" />
         </div>
+
       </section>
 
       {/* SECTION 1 */}
@@ -119,7 +120,7 @@ export default function App() {
         </div>
         
         <img src="/city.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl"/>
-        <img src="/plane.png" className="absolute top-20 right-0 w-full max-w-6xl"/>
+        <img src="/plane.png" className="absolute top-20 right-0 w-full max-w-5xl"/>
       </section>
 
     </div>
