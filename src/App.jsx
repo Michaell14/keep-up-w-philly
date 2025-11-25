@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { animate } from "motion";
 import "./index.css";
 
 export default function App() {
+  const heroImageRef = useRef(null);
+
+  useEffect(() => {
+    if (!heroImageRef.current) return;
+    animate(
+      heroImageRef.current,
+      { opacity: [0, 1], y: [80, 0] },
+      { duration: 0.9, easing: "ease-out" }
+    );
+  }, []);
+
   return (
     <div>
 
@@ -21,7 +33,11 @@ export default function App() {
         </div>
         </a>
 
-        <img src="/together.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl min-w-3xl"/>
+        <img
+          ref={heroImageRef}
+          src="/together.png"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5xl min-w-3xl"
+        />
   
 
       </section>
@@ -120,8 +136,8 @@ export default function App() {
           </p>
         </div>
         
-        <img src="/city.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl"/>
-        <img src="/plane.png" className="absolute top-20 right-0 w-full max-w-5xl"/>
+        <img src="/city.png" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 min-w-3xl"/>
+        <img src="/plane.png" className="absolute top-20 right-0 w-2/3"/>
       </section>
 
     </div>
