@@ -21,7 +21,7 @@ export default function App() {
           <img src="/underline.png" className="absolute -bottom-3 md:-bottom-5 right-0 w-20 md:w-32"/>
         </div>
         
-        <p className="text-xl md:text-2xl px-8 mt-6 text-[#847E72] max-w-md hanken-grotesk-400 -translate-y-1/2">Keep up with what's hot in Philly with simple email alerts.</p>
+        <p className="text-xl md:text-2xl px-8 mt-10 md:mt-6 text-[#847E72] max-w-md hanken-grotesk-400 -translate-y-1/2">Keep up with what's hot in Philly with simple email alerts.</p>
         <a href="https://ifttt.com/applets/mnYi4Tvk-keep-up-w-philly" target="_blank">
         <div 
           className="lexend-exa text-base md:text-lg mt-6 py-2 px-4 bg-[#3f342f] text-white rounded-md -translate-y-1/2"
